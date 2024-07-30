@@ -1,16 +1,42 @@
+Certainly! Here's an example of how you can create a simple HTML webpage displaying your current favorite song and linking it to the official YouTube video:
+
+```html
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Song</title>
+    <style>
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .content a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="content">
+        <p>My current favourite song is <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank">[song_name]</a>.</p>
+    </div>
 </body>
-
 </html>
+```
+
+### Instructions:
+1. **HTML Structure:** All content is wrapped inside a `<div>` tag with the class `content`.
+2. **Display Text:** Replace `[song_name]` in the anchor tag with your actual favorite song name.
+3. **Link to YouTube:** Replace `VIDEO_ID_HERE` in the `href` attribute with the actual YouTube video ID of your favorite song. For example, for the song "Imagine" by John Lennon, the YouTube link could be `https://www.youtube.com/watch?v=yRhq-yO1KN8`.
+4. **Anchor Tag Validation:** Ensure the `href` attribute of the anchor tag contains a valid URL starting with `https://www.youtube.com/`.
+
+Make sure to replace placeholders like `[song_name]` and `VIDEO_ID_HERE` with your specific song details and YouTube video ID to personalize the webpage to your favorite song.
